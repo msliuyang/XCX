@@ -1,0 +1,6 @@
+/**app.wxss**/
+
+page{
+  background-color: #eee;
+  font: normal 16px Arial,Helvetica,sans-serif;
+}

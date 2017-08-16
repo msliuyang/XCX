@@ -1,0 +1,18 @@
+/* pages/select/select.wxss */
+.btn-nav{ display: flex; flex-flow: row wrap; margin:30rpx 15rpx; }
+.btn{ padding:5rpx 15rpx; color:red; font-size: 14px;  border:1px solid red; border-radius: 5px; margin: 15rpx; }
+
+.marry-select{ display: flex;flex-flow: row wrap; background: #fff; }
+.marry-select .select-item-box{ width: 50%; padding: 30rpx; box-sizing: border-box; }
+
+
+.marry-select .select-box{ border:1px solid #eee; box-sizing: border-box; }
+
+.marry-select .select-item-box:nth-child(2n+1) .select-item-img{ width:100%; height:240rpx; border-radius: 0 15px; }
+.marry-select .select-item-box:nth-child(2n) .select-item-img{ width:100%; height:240rpx; border-radius:15px 0; }
+
+
+.marry-select .select-item{ position: relative; margin:15rpx;}
+.marry-select .select-item .icon-collection{width:42rpx;height:42rpx;}
+
+.marry-select .select-item .btn-cart{ position: absolute;right:0; margin: 0;}

@@ -1,0 +1,39 @@
+<!--pages/index/index.wxml-->
+
+<view class="container">
+
+
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:for-item="item" wx:for-index="idx">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+
+
+<view class="marry-list">
+
+  <block wx:for="{{listData}}"  wx:for-item="item" wx:for-index="idx">
+    <view class="marry-list-item">
+      <view class="marry-list-bar">
+         <image class="marry-icon" src="{{item.icon}}"></image>
+        <text class="marry-title">{{item.title}}</text>
+        <text class="marry-select"  bindtap="bindSelectTap" data-listId="{{item.listId}}">+我要选</text>
+      </view>
+      <image class="marry-img" src="{{item.image}}"></image>  
+      <text class="marry-select-info">{{item.content}}</text> 
+    </view>
+  </block>
+
+</view>
+
+
+
+
+
+
+
+</view>

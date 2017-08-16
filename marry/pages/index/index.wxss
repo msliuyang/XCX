@@ -1,0 +1,22 @@
+/* pages/index/index.wxss */
+
+swiper,swiper-item{ height: 240px; }
+swiper-item image{ width: 100%; height: 240px;}
+
+.marry-list-item{
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  margin-top: 20rpx;
+  padding: 10rpx;
+}
+
+.marry-list-item .marry-list-bar{ position: relative; margin:15rpx 0; }
+.marry-list-item .marry-title{ margin: 0 15rpx;vertical-align: middle; }
+
+.marry-list-item .marry-icon{width:42rpx;height:42rpx;border-radius: 50%; vertical-align: middle;}
+
+.marry-list-item .marry-select{ position: absolute;right: 15rpx; padding: 3rpx 6rpx; border:1px solid red; border-radius: 5rpx; color: red; }
+
+.marry-list-item .marry-img{ width: 100%;height: 160px;margin:15rpx 0;}
+.marry-list-item .marry-select-info{ line-height: 24px; } 

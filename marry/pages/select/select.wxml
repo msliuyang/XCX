@@ -1,0 +1,51 @@
+<!--pages/select/select.wxml-->
+<view class="container">
+
+  <view class="btn-nav">
+
+    <!-- <text class="btn">婚戒</text>
+    <text class="btn">婚礼服</text>
+    <text class="btn">婚妆</text>
+    <text class="btn">婚纱照</text>
+    <text class="btn">婚车</text>
+    <text class="btn">酒店</text>
+
+    <text class="btn">婚戒</text>
+    <text class="btn">婚礼服</text>
+    <text class="btn">婚妆</text>
+    <text class="btn">婚纱照</text>
+    <text class="btn">婚车</text>
+    <text class="btn">酒店</text> -->
+
+    <block wx:for="{{nav}}" wx:for-item="nav" wx:for-index="idx"> 
+        <text class="btn" bindtap="bindNavTap" data-navId="{{nav.selectId}}">{{nav.text}}</text>
+    </block>
+
+  </view>
+
+
+
+  <view class="marry-select">
+
+     <block wx:for="{{selectData}}" wx:for-item="select" wx:for-index="idx"> 
+      <view class="select-item-box">
+        <view class="select-box">
+          <image class="select-item-img" src="{{select.selectImg}}"></image>
+
+          <view class="select-item">
+            <image class="icon-collection" src="../../images/icon/collection.png"></image>
+            <text class="btn btn-cart">+加入购物车</text>
+          </view>
+        </view>
+       </view> 
+     </block> 
+
+  </view>
+
+
+
+
+
+
+
+</view>
